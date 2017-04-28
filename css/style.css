@@ -159,7 +159,7 @@ hr
 
     z-index: 500;
     top: 0px;
-    width: 15000px;
+    width: 30000px;
 }
 
 .front img {
@@ -194,7 +194,7 @@ hr
 .page_img{
     position: absolute;
     top: 20%;
-    left: 8%;
+    left: 4%;
     width: 2000px;
     height: 600px;
 }
@@ -224,45 +224,45 @@ hr
 /*//////////asset nuage////////////*/
 .nuage1 {
 margin-bottom: 520px;
-margin-left: 100px;    
+margin-left: 100px;
 }
 .nuage2 {
 margin-bottom: 620px;
-margin-left: 80px;  
+margin-left: 80px;
 }
 .nuage3 {
 margin-bottom: 490px;
-margin-left: 50px;    
+margin-left: 50px;
 }
 .nuage4 {
 margin-bottom: 560px;
-margin-left: 90px;      
+margin-left: 90px;
 }
 .nuage5 {
 margin-bottom: 650px;
-margin-left: 120px;      
+margin-left: 120px;
 }
 .nuage6 {
 margin-bottom: 510px;
-margin-left: 70px;      
+margin-left: 70px;
 }
 .nuage7 {
 margin-bottom: 630px;
-margin-left: 20px;      
+margin-left: 20px;
 }
 .nuage8 {
 margin-bottom: 490px;
-margin-left: 50px;      
+margin-left: 50px;
 }
 .nuage9 {
 margin-bottom: 630px;
-margin-left: 110px;      
+margin-left: 110px;
 }
 
 /*//////////asset nuage////////////*/
 .description
 {
-    display: flex;    
+    display: flex;
     position: absolute;
     top: 430px;
     width: 670px;
@@ -453,7 +453,7 @@ margin-left: 110px;
 .page_img2{
     position: absolute;
     top: 20%;
-    left: 39%;
+    left: 19.5%;
     width: 1000px;
     height: 600px;
 }
@@ -874,6 +874,30 @@ margin-left: 110px;
     height: 500px;
 }
 
+.groupes4{
+    top: 55%;
+    width: 600px;
+    height: 550px;
+    left: 13100px;
+}
+
+.groupes4 .image30{
+    width: 300px;
+    height: 100px;
+}
+
+.groupes4 h3{
+    text-align: center;
+    font-family: "comic";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.groupes4 .formule-ado .image31{
+    width: 300px;
+    height: 50px;
+}
+
 .download
 {
     top: 44%;
@@ -903,7 +927,7 @@ label{
     left: 25px;
     height: 200px;
     z-index: 501;
-    
+
         -webkit-animation:spin 3s linear infinite;
     -moz-animation:spin 3s linear infinite;
     animation:spin 3s linear infinite;
@@ -918,7 +942,7 @@ label{
     left: 30px;
     height: 200px;
     z-index: 501;
- 
+
 
 }*/
 
