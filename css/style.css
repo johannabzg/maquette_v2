@@ -69,7 +69,7 @@ a
 p
 {
     font-family: "Arial";
-    font-size: 18px;
+    font-size: 19px;
 }
 
 hr
@@ -183,7 +183,7 @@ hr
   display: flex;
     flex-direction: column;
     z-index: 503;
-    height: 480px;
+
     background: rgba(232,204,130,0.5);
     padding: 10px 30px;
     border: 20px solid transparent;
@@ -299,7 +299,7 @@ margin-left: 110px;
     width: 20%;
     height: 15%;
     right: 55%;
-    bottom: 30%;
+    bottom: 100px;
 }
 
 .description .image3{
@@ -307,14 +307,14 @@ margin-left: 110px;
     width: 254px;
     height: 98px;
     right: 185px;
-    bottom: 120px;
+    bottom: 110px;
 }
 
 .description .image4{
     position: absolute;
-    width: 250px;
-    height: 90px;
-    right: 200px;
+    width: 170px;
+    height: 60px;
+    right: 20px;
     bottom: 120px;
 }
 
@@ -369,8 +369,8 @@ margin-left: 110px;
     position: absolute;
     width: 250px;
     height: 350px;
-    left: 75%;
-    bottom: 20%;
+    left: 1525px;
+    top: 300px;
     border: 10px solid transparent;
     border-image: url("../assets/wood1.png") 200;
 }
@@ -474,7 +474,7 @@ margin-left: 110px;
 
 .page_img2 .image19{
     position: absolute;
-    width: 300px;
+    width: 370px;
     height: 320px;
     bottom: 50%;
     left: 35%;
@@ -756,6 +756,8 @@ margin-left: 110px;
 
 .groupes .formule-ado2 .image33{
     position: absolute;
+    height: 52px;
+    width: auto;
 }
 
 .groupes .formule-ado2 .formule-grp3{
@@ -936,24 +938,18 @@ label{
 @-webkit-keyframes spin { 40% { -webkit-transform: rotate(10deg); } }
 @keyframes spin { 40% { -webkit-transform: rotate(10deg); transform:rotate(10deg); } }
 
-/*.masquotte {
-    position: fixed;
-    top: 230px;
-    left: 30px;
-    height: 200px;
-    z-index: 501;
-
-
-}*/
-
 .corde {
     position: fixed;
-    top: 490px;
+    top: 550px;
     height: 5px;
-    width: 15000px;
+    width: 9980px;
     z-index: 502;
     background-image: url('../assets/cable.jpg');
     background-size: cover;
-    border-bottom-left-radius: 1000px 70px;
+/*    border-bottom-left-radius: 1000px 70px;
     border-bottom-right-radius: 1000px 70px;
+    -webkit-transform:rotate(2deg);
+    -moz-transform:rotate(2deg);
+    -o-transform:rotate(2deg);
+    -ms-transform:rotate(2deg);*/
 }
