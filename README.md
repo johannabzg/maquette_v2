@@ -1,2 +1,2 @@
 # maquette_v2
-https://htmlpreview.github.io/?https://github.com/ForestParc/maquette_v2/blob/master/index.html
+http://htmlpreview.github.io/?https://github.com/johannabzg/maquette_v2/blob/new_maquettev3/index.html
