@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Forest1 Parc Beta</title>
     <link rel="icon" type="image/png" href="assets/logos/Forestico.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Description -->
     <meta name="description" content="#"> <!-- A FAIRE -->
@@ -24,17 +25,17 @@
 
     <!-- CSS PERSO -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/loader.min.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 
 <body>
    
-    <div class="loader" style="display:none;">
+    <div id="char_1" class="loader">
         <img class="forest_load animationjoy" src="assets/logos/ForestParc.png"/>
-        <img class="arbre_load"src="assets/loader.gif"/>
+        <img class="arbre_load" src="assets/loader.gif"/>
     </div>
    
-    <div class="container">
+    <div id="char_2" class="container" >
         <div class="header">
             <div class="logo">
                 <a href="#"><img src="assets/logos/ForestParc.png" alt="" width="200" height="70"/></a>
@@ -42,26 +43,26 @@
             </div>
 
             <div class="credits">
-                <nav class="nav">
+                <nav class="nav" id="wrapper">
                     <ul>
                         <!-- On règle les ancres ici -->
                         <li>
-                            <a href="#presentation" id="presentation-nav">Présentation</a>
+                            <a data-scroll href="#presentation" id="presentation-nav">Présentation</a>
                         </li>
                         <li>
-                            <a href="#documentation" id="documentation-nav">Formules et tarifs</a>
+                            <a data-scroll href="#documentation" id="documentation-nav">Formules et tarifs</a>
                         </li>
                         <li>
-                            <a href="#options" id="options-nav">Anniversaires</a>
+                            <a data-scroll href="#options" id="options-nav">Anniversaires</a>
                         </li>
                         <li>
-                            <a href="#groupes" id="groupes-nav">Groupes</a>
+                            <a data-scroll href="#groupes" id="groupes-nav">Groupes</a>
                         </li>
                         <li>
-                            <a href="">Laser-Game</a>
+                            <a data-scroll href="#lazer" id="lazer_nav">Laser-Game</a>
                         </li>
                         <li>
-                            <a href="#contact" id="contact-nav">Contact</a>
+                            <a data_scroll href="#contact" id="contact-nav">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -81,13 +82,12 @@
 
         </div>
 
-        <div class="masquotte">
-            <img class="masquotte" src="assets/masquotte/mas_1.png">
-        </div>
-
-
+       
 
         <div class="front scroll">
+            <div class="masquotte">
+            <img class="masquotte" src="assets/masquotte/mas_1.png">
+        </div>
             <img src="assets/foret/colorisation012.3.png">
             <img src="assets/foret/colorisation012.3.png">
             <img src="assets/foret/colorisation012.3.png">
@@ -323,7 +323,7 @@
                   <img src="assets/formules/formule-adulte-accro.png" alt="" class="image30">
                   <h3><span style="color:#54FB1A;">PARCOURS AVENTURE sur 3ha de forêt</span><br/>
                   <span style="color:#FA7812;">8 PARCOURS adultes</span><br/>
-                  <span style="color:#724BF5;">"AQUABRANCHE" : jeux d'eaux au sol et sur les parcours !</span></br>
+                  <span style="color:#724BF5;">"AQUABRANCHE" : jeux d'eaux au sol et sur les parcours !</span><br />
                   <span style="color:#B048AD;">MINI-GOLF 9 trous</span></h3>
               </article>
               <article class="formule-ado">
@@ -363,12 +363,13 @@
             </div>
         </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='js/idwtn.js'></script>
     <script src="scrollto/lib/jquery-scrollto.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll1.js"></script>
+    <script src="js/loader.js"></script>
 </div>
 </body>
 </html>
