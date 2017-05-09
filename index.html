@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Forest1 Parc Beta</title>
     <link rel="icon" type="image/png" href="assets/logos/Forestico.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Description -->
     <meta name="description" content="#"> <!-- A FAIRE -->
@@ -24,44 +25,44 @@
 
     <!-- CSS PERSO -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/loader.min.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 
 <body>
-   
-    <div class="loader" style="display:none;">
+
+    <div id="char_1" class="loader">
         <img class="forest_load animationjoy" src="assets/logos/ForestParc.png"/>
-        <img class="arbre_load"src="assets/loader.gif"/>
+        <img class="arbre_load" src="assets/loader.gif"/>
     </div>
-   
-    <div class="container">
+
+    <div id="char_2" class="container" >
         <div class="header">
             <div class="logo">
-                <a href="#"><img src="assets/logos/ForestParc.png" alt="" width="200" height="70"/></a>
+                <a href="#"><img src="assets/logos/ForestParc1.png" alt="" width="200" height="70"/></a>
                 <img src="assets/pano.png" alt="" width="140" height="75">
             </div>
 
             <div class="credits">
-                <nav class="nav">
+                <nav class="nav" id="wrapper">
                     <ul>
                         <!-- On règle les ancres ici -->
                         <li>
-                            <a href="#presentation" id="presentation-nav">Présentation</a>
+                            <a data-scroll href="#presentation" id="presentation-nav">Présentation</a>
                         </li>
                         <li>
-                            <a href="#documentation" id="documentation-nav">Formules et tarifs</a>
+                            <a data-scroll href="#documentation" id="documentation-nav">Formules et tarifs</a>
                         </li>
                         <li>
-                            <a href="#options" id="options-nav">Anniversaires</a>
+                            <a data-scroll href="#options" id="options-nav">Anniversaires</a>
                         </li>
                         <li>
-                            <a href="#groupes" id="groupes-nav">Groupes</a>
+                            <a data-scroll href="#groupes" id="groupes-nav">Groupes</a>
                         </li>
                         <li>
-                            <a href="">Laser-Game</a>
+                            <a data-scroll href="#lazer" id="lazer_nav">Laser-Game</a>
                         </li>
                         <li>
-                            <a href="#contact" id="contact-nav">Contact</a>
+                            <a data_scroll href="#contact" id="contact-nav">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -81,21 +82,21 @@
 
         </div>
 
-        <div class="masquotte">
-            <img class="masquotte" src="assets/masquotte/mas_1.png">
-        </div>
-
 
 
         <div class="front scroll">
-            <img src="assets/foret/colorisation012.3.png">
-            <img src="assets/foret/colorisation012.3.png">
-            <img src="assets/foret/colorisation012.3.png">
-            <img src="assets/foret/colorisation012.3.png">
-            <img src="assets/foret/colorisation012.3.png">
-            <img src="assets/foret/colorisation012.3.png">
+            <div class="masquotte">
+            <img class="masquotte" src="assets/masquotte/mas_1.png">
+            </div>
             <div class="corde">
             </div>
+            <img src="assets/foret/colorisation012.3.png">
+            <img src="assets/foret/colorisation012.3.png">
+            <img src="assets/foret/colorisation012.3.png">
+            <img src="assets/foret/colorisation012.3.png">
+            <img src="assets/foret/colorisation012.3.png">
+            <img src="assets/foret/colorisation012.3.png">
+
 
 
             <div class="icon">
@@ -135,7 +136,7 @@
               <article>
                   <h3>A votre disposition sur place :</h3>
                   <p><strong style="color:#F18A00;">Zones de jeux</strong>, cages de foot, ballons, pétanque, sentiers de promenade en forêt.
-                  <br/><strong style="color:#99A106;">Aires de pique-nique</strong> ombragées, abris-repas, toilettes, eau potable, brumisateurs...
+                  <br/><strong style="color:#4e5204;">Aires de pique-nique</strong> ombragées, abris-repas, toilettes, eau potable, brumisateurs...
                   <br/><strong style="color:#0E71B4;">« AQUABRANCHE » (de juin à septembre):</strong> jeux d'eau au sol et sur les parcours
                   </p>
               </article>
@@ -154,24 +155,87 @@
                 <h2>Nos Formules</h2>
                 <section>
                     <article>
-                        <img src="assets/formules/formule1.png" alt="" class="image6">
-                        <img src="assets/formules/formule2.png" alt="" class="image7">
+                        <!-- Formule -->
+                        <div class="doc-formule">
+                            <section class="doc-form-sec">
+                                <img src="assets/formules/logo-formule.png" alt="">
+                                <p class="formule">Formule <strong>P'TIT ECUREUIL</strong></p>
+                            </section>
+                            <section>
+                                <p class="descrip-form"><strong>A partir de 2 ans</strong></br>Mini-parc + Château gonflable + Trampoline à volonté</p>
+                                <img src="assets/formules/prix-formule.png" alt="">
+                            </section>
+                            <div class="footer-doc-form">
+                                <p>Famille min. 4 pers : 4 euros/pers - Groupe min. 10 pers : 3 euros/pers.</p>
+                            </div>
+                        </div>
+                        <!-- Formule1 -->
+                        <div class="doc-formule1">
+                            <section class="doc-form1-sec">
+                                <img src="assets/formules/logo-formule1.png" alt="">
+                                <p class="formule1">Formule <strong>KID</strong></p>
+                            </section>
+                            <section>
+                                <p class="descrip-form1"><strong>A partir de 3 ans</strong></br>Super Kid + Top Kid + Château + Trampoline à volonté</br>2 parcours en Ligne de Vie Continue pour les petits dégourdis!</br>Surveillance par un adulte responsable au sol</p>
+                                <img src="assets/formules/prix-formule1.png" alt="">
+                            </section>
+                            <div class="footer-doc-form1">
+                                <p>Famille min. 4 pers : 9 euros/pers - Groupe min. 10 pers : 8 euros/pers.</p>
+                            </div>
+                        </div>
+                        <!-- Formule2 -->
+                        <div class="doc-formule2">
+                            <section class="doc-form2-sec">
+                                <img src="assets/formules/logo-formule2.png" alt="">
+                                <p class="formule2">Formule <strong>AVENTURE</strong></p>
+                            </section>
+                            <section>
+                                <p class="descrip-form2"><strong>Taille minimum: 1m15</strong></br>4 parcours, 12 tyroliennes, surf des arbres...</br>Lancez-vous à la découverte de l'aventure !</br>Pour cette formule les moins de 9 ans doivent être accompagnés dans les arbres par un adulte</p>
+                                <img src="assets/formules/prix-formule2.png" alt="">
+                            </section>
+                            <div class="footer-doc-form2">
+                                <p>Famille min. 4 pers : 14 euros/pers - Groupe min. 10 pers : 13 euros/pers.</p>
+                            </div>
+                        </div>
                     </article>
                     <article>
-                        <img src="assets/formules/formule3.png" alt="" class="image8">
-                        <img src="assets/formules/formule4.png" alt="" class="image9">
+                      <!-- Formule3 -->
+                      <div class="doc-formule3">
+                          <section class="doc-form3-sec">
+                              <img src="assets/formules/logo-formule3.png" alt="">
+                              <p class="formule3">Formule <strong>SENSATIONS</strong></p>
+                          </section>
+                          <section>
+                              <p class="descrip-form3"><strong>Taille minimum: 1m40</strong></br>7 parcours : la total ! Liane Tarzan, siège volant, 20 tyroliennes, Tyro-Fun de 100m de long...</br>Présence d'un adulte responsable au sol ou sur les parcours</p>
+                              <img src="assets/formules/prix-formule3.png" alt="">
+                          </section>
+                          <div class="footer-doc-form3">
+                              <p>Famille min. 4 pers : 19 euros/pers - Groupe min. 10 pers : 18 euros/pers.</p>
+                          </div>
+                      </div>
+                      <!-- Formule4 -->
+                      <div class="doc-formule4">
+                          <section class="doc-form4-sec">
+                              <img src="assets/formules/logo-formule4.png" alt="">
+                              <p class="formule4">Parcours <strong>NOIR + GRAND SAUT</strong></p>
+                          </section>
+                          <section>
+                              <p class="descrip-form4"><strong>Taille minimum: 1m40</strong></br>Du sport et des frissons pour les plus téméraires !</br>LE GRAND SAUT à 10m de haut avec chute libre !</p>
+                              <img src="assets/formules/prix-formule4.png" alt="">
+                          </section>
+                      </div>
+
+                      <p>Etudiants: -10% sur le tarif par personne<br/>
+                      Entrée gratuite pour les visiteurs</p>
                     </article>
                 </section>
-                <section>
-                  <img src="assets/formules/formule5.png" alt="" class="image10">
-                </section>
-                <p>Etudiants: -10% sur le tarif par personne<br/>
-                Entrée gratuite pour les visiteurs</p>
             </div>
+
             <div class="page_img2">
                 <img src="assets/formules/img/tarif1.JPG" alt="" class="image18">
                 <img src="assets/formules/img/tarif2.JPG" alt="" class="image19">
             </div>
+
             <div name="options" id="options" class="options page">
                 <h2>Anniversaires</h2>
                 <section class="sec_options">
@@ -202,29 +266,71 @@
             <div class="options2 page">
                 <section class="sec_options2">
                     <article>
-                        <div class="corde2"></div>
-                        <div class="corde3"></div>
-                        <h2><img src="assets/formules/img/logo-annif-accro.png" alt="" class="image20"></h2>
-                            <article>
-                                <img src="assets/formules/img/annif1.png" alt="" class="image21">
-                                <img src="assets/formules/img/annif2.png" alt="" class="image22">
-                                <img src="assets/formules/img/annif3.png" alt="" class="image23">
-                                <img src="assets/formules/img/annif4.png" alt="" class="image24">
-                            </article>
+                        <div class="anniv-titre">
+                            <img src="assets/formules/img/logo-annif-accro.png" alt="">
+                        </div>
+
+                        <div class="anniv-form1">
+                            <img src="assets/formules/img/annif1.png" alt="">
+                            <p><span class="annif1">Mini-parc + Château Gonflable : A VOLONTE</span></br>
+                            Mini-parc : Un parcours aventure (sans harnais) entouré de filets de sécurité.</br>
+                            Surveillance au sol assuré par les accompagnants du groupe.</p>
+                        </div>
+
+                        <div class="anniv-form2">
+                            <img src="assets/formules/img/annif2.png" alt="">
+                            <p><span class="annif2">2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span></br>
+                            Parcours "SUPER KID" et "TOP KID" équipés en Ligne de Vie Continue :</br>
+                            pour faire ses premiers pas dans les arbres en toute sécurité.</br>
+                            Surveillance au sol assuré par les accompagnants du groupe + Opérateur du Parc.</p>
+                        </div>
+
+                        <div class="anniv-form3">
+                            <img src="assets/formules/img/annif3.png" alt="">
+                            <p><span class="annif3">Mini-parc + Château Gonflable : A VOLONTE</span></br>
+                            Mini-parc : Un parcours aventure (sans harnais) entouré de filets de sécurité.</br>
+                            Surveillance au sol assuré par les accompagnants du groupe.</p>
+                        </div>
+
+                        <div class="anniv-form4">
+                            <img src="assets/formules/img/annif4.png" alt="">
+                            <p><span class="annif4">7 parcours, la Totale ! + Mini-Golf</span></br>
+                            Parcours de niveaux faciles à sportifs : liane Tarzan, siège volant, tyros jusqu'à 100m de long !</br>
+                            + PARCOURS NOIR + LE "GRAND SAUT"... un saut de 10m de haut !</br>
+                            Présence d'un accompagnant du groupe au sol ou dans les arbres.</p>
+                        </div>
                     </article>
                     <article>
-                      <div class="corde4"></div>
-                      <div class="corde5"></div>
-                        <h2><img src="assets/formules/img/logo-annif-forestpass.png" alt="" class="image25"></h2>
-                        <article>
-                            <img src="assets/formules/img/annif5.png" alt="" class="image26">
-                            <img src="assets/formules/img/annif6.png" alt="" class="image27">
-                            <p><span>*Laser Game en Forêt<br/>
+                        <div class="anniv-titre2">
+                            <img src="assets/formules/img/logo-annif-forestpass.png" alt="">
+                        </div>
+
+                        <div class="anniv-form5">
+                            <p><span class="annif5">A partir de 8 ans :</span></p>
+                            <img src="assets/formules/img/annif5.png" alt="">
+                            <p><span class="annif5">4 Parcours + Trampoline + Mini-Golf</span></br>
+                            Le grand saut dans l'aventure : 10 tyroliennes, filets, balançoire volante, surf des arbres...</br>
+                            Présence d'un accompagnant du groupe dans les arbres (1 pour 10)</br>
+                            + 1 partie de Laser Game en forêt de 15min</p>
+                        </div>
+
+                        <div class="anniv-form6">
+                            <p><span class="annif6">A partir de 12 ans :</span></p>
+                            <img src="assets/formules/img/annif6.png" alt="">
+                            <p><span class="annif6">7 Parcours, la Totale ! + Mini-Golf</span></br>
+                            Parcours de niveaux faciles à sportifs : liane Tarzan, siège volant, tyros jusqu'à 100m de long !</br>
+                            + PARCOURS NOIR + LE "GRAND SAUT"... un saut de 10m de haut !</br>
+                            Présence d'un accompagnant du groupe au sol ou dans les arbres.</br>
+                            + 1 partie de Laser Game en forêt de 15min</p>
+                        </div>
+
+                        <div class="anniv-descrip-laser">
+                            <p class="annif7"><span>*Laser Game en Forêt<br/>
                             Activité 100% Fun sur une zone de 3000m2 en Forêt.<br/>
                             Jouez en plein jour : Système Laser Invisible!</span><br/>
                             En équipe, chaque participant est muni d'un fusil et d'un casque avec bandeau récepteur de tirs.<br/>
                             Durée de chaque partie 15min.</p>
-                        </article>
+                        </div>
 
                     </article>
                 </section>
@@ -232,17 +338,21 @@
 
             <div class="options3 page">
                 <article>
-                    <h2><img src="assets/formules/img/logo-annif-laser.png" alt="" class="image28"></h2>
-                    <img src="assets/logos/logolaser.png" alt="" class="image29">
-                    <p>100% Fun<br/>
-                    Adultes et Enfants<br/>
-                    Zone de 3000m2 en forêt.</p>
-                    <p>Jouez en plein jour :<br/>
-                    Système laser Invisible !</p>
-                    <h4>En équipe, chaque participant est muni d'un fusil et d'un casque avec bandeau récepteur de tirs.<br/>
-                    Durée de chaque partie : 20min</h4>
-                    <p><span>1 partie / pers. <strong>6euros</strong><br/>
-                    2ème partie / pers. <strong>4euros</strong></span></p>
+                    <div class="anniv-form-laser">
+                        <img src="assets/formules/img/logo-annif-laser.png" alt="">
+                    </div>
+                    <div class="descrip-form-laser">
+                        <img src="assets/formules/img/logo-lazer-game.png" alt="">
+                        <p>100% Fun<br/>
+                        Adultes et Enfants<br/>
+                        Zone de 3000m2 en forêt.</p>
+                        <p>Jouez en plein jour :<br/>
+                        Système laser Invisible !</p>
+                        <h4>En équipe, chaque participant est muni d'un fusil et d'un casque avec bandeau récepteur de tirs.<br/>
+                        Durée de chaque partie : 20min</h4>
+                        <p><span>1 partie / pers. <strong>6euros</strong><br/>
+                        2ème partie / pers. <strong>4euros</strong></span></p>
+                    </div>
                 </article>
             </div>
 
@@ -255,54 +365,72 @@
 
                     <h2>Groupes - Enfants et Ados</h2>
 
-                    <article>
-                        <img src="assets/formules/img/logo-groupes-accro.png" alt="" class="image30">
+                    <article class="grp-ado-titre">
+                        <img src="assets/formules/img/logo-groupes-accro.png" alt="">
                         <h3><span style="color:#50F91A;">PARCOURS AVENTURE sur 3ha de forêt</span><br/>
                         <span style="color:#93038F;">CHATEAU GONFLABLE et TRAMPOLINE</span><br/>
                         <span style="color:#7950F4;">MINI-GOLF 9 trous</span></h3>
                     </article>
-                    <article class="formule-ado">
-                        <img src="assets/formules/img/groupes1.png" alt="" class="image31">
-                        <p class="formule-grp1"><span style="color:#FF7300;font-weight:bold;">Mini-parc + Château Gonflable : A VOLONTE</span><br/>
-                        Mini-parc : Un parcours aventure (sans harnais) entouré de filets de sécurité.<br/>
-                        Surveillance au sol assurée par les accompagnants du groupe.</p>
-                        <img src="assets/formules/img/groupes2.png" alt="" class="image32">
-                        <p class="formule-grp2"><span style="color:#F7DD00;font-weight:bold;">2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span><br/>
-                        Parcours "SUPER KID" et "TOP KID" équipés en ligne de vie continue :<br/>
-                        pour faire ses premiers pas dans les arbres en toute sécurité.<br/>
-                        Surveillance au sol assurée par les accompagnants du groupe + Opérateur du parc.</p>
-                    </article>
-                    <article class="formule-ado2">
-                        <img src="assets/formules/img/groupes3.png" alt="" class="image33">
-                        <p class="formule-grp3"><span style="color:#7CB200;font-weight:bold;">4 Parcours + Trampoline + Mini-Golf</span><br/>
-                        Le grand saut dans l'aventure : 10 tyroliennes, filets, balançoire volante, surf des arbres...<br/>
-                        Présence d'un accompagnant du groupe dans les arbres (1 pour 10)</p>
-                        <img src="assets/formules/img/groupes4.png" alt="" class="image34">
-                        <p class="formule-grp4"><span style="color:#FF0000;font-weight:bold;">7 Parcours, la Totale ! + Mini-Golf</span><br/>
-                        Parcours de niveaux faciles à sportifs: liane Tarzan, siège volant, tyros jusqu'à 100m de long !<br/>
-                        + PARCOURS NOIR + LE "GRAND SAUT"... un saut de 10m de haut !<br/>
-                        Présence d'un accompagnant du groupe au sol ou dans les arbres (1 pour 10)</p>
-                    </article>
+                    <section class="grp-sec">
+                        <article class="formule-ado">
+                            <div class="grp-form1">
+                                <img src="assets/formules/img/groupes1.png" alt="">
+                                <p><span>Mini-parc + Château Gonflable : A VOLONTE</span><br/>
+                                Mini-parc : Un parcours aventure (sans harnais) entouré de filets de sécurité.<br/>
+                                Surveillance au sol assurée par les accompagnants du groupe.</p>
+                            </div>
+
+                            <div class="grp-form2">
+                                <img src="assets/formules/img/groupes2.png" alt="">
+                                <p><span>2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span><br/>
+                                Parcours "SUPER KID" et "TOP KID" équipés en ligne de vie continue :<br/>
+                                pour faire ses premiers pas dans les arbres en toute sécurité.<br/>
+                                Surveillance au sol assurée par les accompagnants du groupe + Opérateur du parc.</p>
+                            </div>
+                        </article>
+
+                        <article class="formule-ado2">
+                            <div class="grp-form3">
+                                <img src="assets/formules/img/groupes3.png" alt="">
+                                <p><span>4 Parcours + Trampoline + Mini-Golf</span><br/>
+                                Le grand saut dans l'aventure : 10 tyroliennes, filets, balançoire volante, surf des arbres...<br/>
+                                Présence d'un accompagnant du groupe dans les arbres (1 pour 10)</p>
+                            </div>
+
+                            <div class="grp-form4">
+                                <img src="assets/formules/img/groupes4.png" alt="">
+                                <p><span>7 Parcours, la Totale ! + Mini-Golf</span><br/>
+                                Parcours de niveaux faciles à sportifs: liane Tarzan, siège volant, tyros jusqu'à 100m de long !<br/>
+                                + PARCOURS NOIR + LE "GRAND SAUT"... un saut de 10m de haut !<br/>
+                                Présence d'un accompagnant du groupe au sol ou dans les arbres (1 pour 10)</p>
+                            </div>
+                        </article>
+                </section>
             </div>
 
             <div class="groupes2 page">
-              <article>
-                  <img src="assets/formules/img/logo-groupes-forestpass.png" alt="" class="image30">
+              <article class="grp-ado-pass-titre">
+                  <img src="assets/formules/img/logo-groupes-forestpass.png" alt="">
                   <h3><span style="color:#72FB3C;">PARCOURS AVENTURE sur 3ha de forêt</span><br/>
                   <span style="color:#F87614;">LASER GAME en forêt</span><br/>
                   <span style="color:#3906E8;">MINI-GOLF 9 trous</span></h3>
               </article>
-              <article class="formule-ado">
-                  <img src="assets/formules/img/groupes5.png" alt="" class="image31">
-                  <p class="formule-grp1"><span style="color:#7CB200;font-weight:bold;">4 Parcours + Trampoline + Mini-Golf</span><br/>
-                  Le grand saut dans l'aventure: 10 tyroliennes, filets, balançoire volante, surf des arbres...<br/>
-                  Présence d'un accompagnant du groupe dans les arbres (1 pour 10)<br/>
-                  + 1 partie de Laser Game en forêt 15min</p>
-                  <img src="assets/formules/img/groupes6.png" alt="" class="image32">
-                  <p class="formule-grp2"><span style="color:#FF0000;font-weight:bold;">2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span><br/>
-                  Parcours "SUPER KID" et "TOP KID" équipés en ligne de vie continue :<br/>
-                  pour faire ses premiers pas dans les arbres en toute sécurité.<br/>
-                  Surveillance au sol assurée par les accompagnants du groupe + Opérateur du parc.</p>
+              <article class="formule-ado3">
+                  <div class="grp-form5">
+                      <img src="assets/formules/img/groupes5.png" alt="">
+                      <p><span>4 Parcours + Trampoline + Mini-Golf</span><br/>
+                      Le grand saut dans l'aventure: 10 tyroliennes, filets, balançoire volante, surf des arbres...<br/>
+                      Présence d'un accompagnant du groupe dans les arbres (1 pour 10)<br/>
+                      + 1 partie de Laser Game en forêt 15min</p>
+                  </div>
+
+                  <div class="grp-form6">
+                      <img src="assets/formules/img/groupes6.png" alt="">
+                      <p><span>2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span><br/>
+                      Parcours "SUPER KID" et "TOP KID" équipés en ligne de vie continue :<br/>
+                      pour faire ses premiers pas dans les arbres en toute sécurité.<br/>
+                      Surveillance au sol assurée par les accompagnants du groupe + Opérateur du parc.</p>
+                  </div>
               </article>
               <p class="lgf"><span>*Laser Game en Forêt<br/>
               Activité 100% Fun sur une zone de 3000m2 en Forêt.<br/>
@@ -313,30 +441,56 @@
 
             <div class="groupes3 page">
               <article>
-                  <img src="assets/formules/img/logo-groupes-laser.png" alt="" class="image30">
-                  <img src="assets/formules/img/groupes7.png" alt="" class="image31">
+                  <div class="grp-laser-titre">
+                      <img src="assets/formules/img/logo-groupes-laser.png" alt="">
+                  </div>
+
+                  <div class="grp-laser">
+                      <img src="assets/formules/img/groupes7.png" alt="">
+                  </div>
               </article>
             </div>
 
             <div class="groupes4 page">
-              <article>
-                  <img src="assets/formules/formule-adulte-accro.png" alt="" class="image30">
+              
+              <article class="grp-adulte-titre">
+                  <img src="assets/formules/formule-adulte-accro.png" alt="">
                   <h3><span style="color:#54FB1A;">PARCOURS AVENTURE sur 3ha de forêt</span><br/>
                   <span style="color:#FA7812;">8 PARCOURS adultes</span><br/>
-                  <span style="color:#724BF5;">"AQUABRANCHE" : jeux d'eaux au sol et sur les parcours !</span></br>
+                  <span style="color:#724BF5;">"AQUABRANCHE" : jeux d'eaux au sol et sur les parcours !</span><br />
                   <span style="color:#B048AD;">MINI-GOLF 9 trous</span></h3>
               </article>
-              <article class="formule-ado">
-                  <img src="assets/formules/item1-adulte.png" alt="" class="image31">
-                  <p class="formule-grp1"><span style="color:#7CB200;font-weight:bold;">4 Parcours + Trampoline + Mini-Golf</span><br/>
-                  Le grand saut dans l'aventure: 10 tyroliennes, filets, balançoire volante, surf des arbres...<br/>
-                  Présence d'un accompagnant du groupe dans les arbres (1 pour 10)<br/>
-                  + 1 partie de Laser Game en forêt 15min</p>
-                  <!-- <img src="assets/formules/img/groupes6.png" alt="" class="image32">
-                  <p class="formule-grp2"><span style="color:#FF0000;font-weight:bold;">2 parcours à volonté + Château Gonflable + Trampoline + Mini-Golf</span><br/>
-                  Parcours "SUPER KID" et "TOP KID" équipés en ligne de vie continue :<br/>
-                  pour faire ses premiers pas dans les arbres en toute sécurité.<br/>
-                  Surveillance au sol assurée par les accompagnants du groupe + Opérateur du parc.</p> -->
+              <article class="formule-adultes">
+                  <div class="grp-adulte-form1">
+                      <img src="assets/formules/item1-adulte.png" alt="">
+                      <p><span>7 parcours de niveaux débutant à sportif</span> : liane Tarzan, siège volant,<br/>
+                      surf des arbres, plus de 20 tyroliennes 40m, 60m et 100m de long !<br/>
+                      + Parcours <span>"NOIR SENSATIONS"</span> : méga-liane, étriers, filet serpent...<br/>
+                      du sport et des frissons pour les plus téméraires !<br/>
+                      +<span>"ESCALARBRE" & "LE GRAND SAUT" : un saut dans le vide à 10m de haut !</span><br/>
+                      (auto-assurage par système QuickJump)</p>
+                  </div>
+
+                  <div class="grp-adulte-form2">
+                      <img src="assets/formules/item2-adulte.png" alt="">
+                  </div>
+
+                  <div class="grp-adulte-form3">
+                      <img src="assets/formules/item3-adulte.png" alt="">
+                      <p>- <span>MULTI-ACTIVITES (sans supplément) :</span> "MINI-GOLF" 9 trous, boulodrome, cage de foot,<br/>
+                      zones de détente en forêt...<br/>
+                      - Buvette, toilettes, eau potable, aires de pique-nique ombragées, abris-repas, brumisateurs<br/>
+                      - Zone "Séminaire-Réunion" en pleine nature<br/>
+                      - "AQUA/BRANCHE" : jeux d'eau au sol et sur les parcours, fraîcheur assurée !</p>
+                  </div>
+
+                  <div class="grp-adulte-form4">
+                      <img src="assets/formules/item4-adulte.png" alt="">
+                      <p>- <span>Pique-nique</span> sur place apporté par les participants (aire de pique-nique privative)<br/>
+                      - <span>Réservation d'un restaurant à proximité: Le "Noir et Blanc"</span><br/>
+                      (à 2 km du Parc / buffet, restauration traditionnelle / Capacité 150 pers.)<br/>
+                      - <span>Repas traiteur</span> sur place (avec supplément)</p>
+                  </div>
               </article>
             </div>
 
@@ -362,13 +516,22 @@
               </article>
             </div>
         </div>
+            <footer><div class="foo">
+               <a href="#">
+                <img title="facebook" src="assets/footer/facebook.png"/></a>
+                <a href="#">
+                <img title="twitter" src="assets/footer/twitter.png"/></a>
+                <a href="#">
+                <img title="copyright" src="assets/footer/copyright.png"/></a>
+            </div></footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='js/idwtn.js'></script>
     <script src="scrollto/lib/jquery-scrollto.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll1.js"></script>
+    <script src="js/loader.js"></script>
 </div>
 </body>
 </html>
