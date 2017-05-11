@@ -133,9 +133,9 @@ hr
 }
 
 .horizon {
-    line-height: 0;
+    line-height: 30;
     z-index: 100;
-    width: 3000px;
+    width: 6000px;
 }
 
 .horizon img {
@@ -152,8 +152,7 @@ hr
 }
 
 .front img {
-
-     float: left;
+    float: left;
     width: auto;
     height: 100%;
     border: none;
@@ -208,49 +207,40 @@ hr
 
 /*//////////asset nuage////////////*/
 .nuage1 {
-position: absolute;
-top: 30px;
-left: 100px;
+bottom: 20%;
+left: 10%;
 }
 .nuage2 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 10%;
 }
 .nuage3 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 1%;
+left: 20%;
 }
 .nuage4 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 50%;
 }
 .nuage5 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 2%;
+left: 10%;
 }
 .nuage6 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 40%;
 }
 .nuage7 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 20%;
 }
 .nuage8 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 10%;
 }
 .nuage9 {
-position: absolute;
-top: 30px;
-left: 100px;
+top: 3%;
+left: 10%;
 }
 
 /*//////////asset nuage////////////*/
@@ -273,11 +263,11 @@ left: 100px;
 
 .description .image0bis{
     position: absolute;
-    width: 220px;
-    height: 180px;
+    width: 260px;
+    height: 150px;
     bottom: 67%;
     border-radius: 35%;
-    left: 417px;
+    left: 350px;
 }
 
 .description .image1{
@@ -1442,31 +1432,32 @@ label{
 
 .masquotte {
     position: fixed;
-    top: 280px;
+    top: 549px;
     left: 25px;
-    height: 200px;
+    height: 200px !important;
     z-index: 501;
-
-        -webkit-animation:spin 2s linear infinite;
+    
+    -webkit-animation:spin 2s linear infinite;
     -moz-animation:spin 2s linear infinite;
+    -o-transform:spin 2s linear infinite;
     animation:spin 2s linear infinite;
 }
 
 @-ms-keyframes spin {
     0% { -ms-transform: rotate(0deg); }
-    50% { -ms-transform: rotate(-5deg); }
+    40% { -ms-transform: rotate(-4deg); }
 }
 @-moz-keyframes spin {
     0% { -moz-transform: rotate(0deg); }
-    50% { -moz-transform: rotate(-5deg); }
+    40% { -moz-transform: rotate(-4deg); }
 }
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
-    50% { -webkit-transform: rotate(-5deg); }
+    40% { -webkit-transform: rotate(-4deg); }
 }
 @keyframes spin {
     0% { transform:rotate(0deg); }
-    50% { transform:rotate(-5deg); }
+    40% { transform:rotate(-4deg); }
 }
 
 /*@-moz-keyframes spin { 40% { -moz-transform: rotate(10deg); } }
@@ -1487,12 +1478,19 @@ label{
     -o-transform:rotate(2deg);
     -ms-transform:rotate(2deg);*/
 }
-.foo {
+footer {
     position: fixed;
-    background-color: rgba(10, 10, 10, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(10, 100, 10, 0.6);
     bottom: 0;
     width: 100%;
     z-index: 600;
+}
+.foo {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
 }
 .foo img {
     height: 32px;
@@ -1502,5 +1500,5 @@ label{
 .foo img:hover {
     border-radius: 30px;
     box-shadow: 3px 3px 1px rgba(10, 10, 10, 0.8);
-    margin-bottom: 2px;
+
 }
