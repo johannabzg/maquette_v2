@@ -1,9 +1,6 @@
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
-    overflow-x: hidden;
-}
 
+body, .smooth-container { scroll-behavior: smooth }
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
   * if you want to make it stick to the top of the browser
@@ -26,6 +23,7 @@ body
 html,
 body
 {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -133,9 +131,9 @@ hr
 }
 
 .horizon {
-    line-height: 30;
+    line-height: 0;
     z-index: 100;
-    width: 6000px;
+    width: 3000px;
 }
 
 .horizon img {
@@ -148,11 +146,12 @@ hr
 .front{
     z-index: 500;
     top: 0px;
-    width: 30000px;
+    width: 17000px;
 }
 
 .front img {
-    float: left;
+
+     float: left;
     width: auto;
     height: 100%;
     border: none;
@@ -173,19 +172,7 @@ hr
     border: 20px solid transparent;
     border-image: url("../assets/bois1.jpg") 200;
     position: absolute;
-}
-
-.page_img{
-    position: absolute;
-    top: 20%;
-    left: 4%;
-    width: 2000px;
-    height: 600px;
-}
-
-.page_img img{
-    margin: 1%;
-    z-index: 503;
+    padding: 5px;
 }
 
 .icon {
@@ -242,84 +229,47 @@ left: 100px;
 top: 30px;
 left: 100px;
 }
-
 /*//////////asset nuage////////////*/
 .description{
     display: flex;
     position: absolute;
     top: 430px;
     width: 680px;
-    height: 430px;
+    height: 480px;
     left: 360px;
 }
-.description > p ~ p {
-    margin: 3px;
-    padding-left: 8px;
-    text-align: inherit;
-    margin-left: inherit;
-}
-.description > p {
-    margin-left: 12px;
-    text-align: center;
-}
+
 .description .image0{
-    position: absolute;
     width: 30%;
     height: 20%;
-    top: 4%;
-    left: 20%;
 }
 
 .description .image0bis{
-    position: absolute;
     width: 260px;
     height: 150px;
-    bottom: 67%;
     border-radius: 35%;
-    left: 350px;
 }
 
-.description .image1{
+video{
+    height: 90%;
+    border: 3px solid #A06D35;
+    background-color: #4FA445;
+}
+
+.page_img{
     position: absolute;
-    width: 15%;
-    height: 25%;
-    bottom: 46%;
-    left: 3px;
+    top: 20%;
+    left: 1200px;
+    width: 800px;
+    height: 600px;
 }
 
-.description .image2{
-    position: absolute;
-    width: 20%;
-    height: 15%;
-    right: 55%;
-    bottom: 28%;
+.page_img img{
+    margin: 1%;
+    z-index: 503;
 }
 
-.description .image3{
-    position: absolute;
-    width: 254px;
-    height: 98px;
-    right: 185px;
-    bottom: 27%;
-}
-
-.description .image4{
-    position: absolute;
-    width: 170px;
-    height: 60px;
-    right: 20px;
-    bottom: 30%;
-}
-
-.page_img .image5{
-    position: absolute;
-    width: 200px;
-    height: 150px;
-    left: 1290px;
-    bottom: 240px;
-}
-
-.page_img .image12{
+.page_img .image1{
     width: 360px;
     height: 260px;
     left: 280px;
@@ -328,65 +278,98 @@ left: 100px;
     border-image: url("../assets/wood1.png") 200;
 }
 
-.page_img .image13{
-    position: absolute;
-    width: 300px;
-    height: 350px;
-    left: 550px;
-    bottom: 180px;
-    border: 10px solid;
-    border-image: url("../assets/bois1.jpg") 200;
-}
-
-.page_img .image14{
+.page_img .image2{
     position: absolute;
     width: 250px;
     height: 350px;
-    left: 1150px;
+    left: 520px;
     bottom: 290px;
     border: 10px solid transparent;
     border-image: url("../assets/wood1.png") 200;
 }
 
-.page_img .image15{
+.page_img .image3{
     position: absolute;
-    width: 250px;
-    height: 350px;
-    left: 930px;
-    top: 300px;
-    border: 10px solid transparent;
-    border-image: url("../assets/bois1.jpg") 200;
+    width: 200px;
+    height: 150px;
+    left: 680px;
+    bottom: 240px;
 }
 
-.page_img .image16{
+.page_img .image4{
     position: absolute;
     width: 250px;
     height: 350px;
-    left: 1525px;
+    left: 900px;
     top: 300px;
     border: 10px solid transparent;
     border-image: url("../assets/wood1.png") 200;
 }
 
-.page_img .image17{
+.description2{
+    display: flex;
+    position: absolute;
+    top: 430px;
+    width: 680px;
+    height: 480px;
+    left: 2700px;
+}
+.description2 > p ~ p {
+    margin: 3px;
+    padding-left: 8px;
+    text-align: inherit;
+    margin-left: inherit;
+}
+.description2 > p {
+    text-align: center;
+}
+
+.description2 .image1{
+    width: 15%;
+    height: 25%;
+    margin: 1%;
+}
+
+.description2 .image2{
+    width: 30%;
+    height: 15%;
+}
+
+.page_img5{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    left: 3400px;
+}
+
+.page_img5 .image1{
     position: absolute;
     width: 250px;
-    height: 350px;
-    left: 95%;
-    bottom: 40%;
+    height: 400px;
+    top: 30%;
+    left: 10%;
     border: 10px solid transparent;
     border-image: url("../assets/wood1.png") 200;
 }
 
-.documentation2{
-    top: 55%;
-    left: 3800px;
-    height: 540px;
+.page_img5 .image3{
+    position: absolute;
+    width: 350px;
+    height: 270px;
+    left: 45%;
+    top: 40%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
 }
 
-.documentation2 .image11{
-    width: 50%;
-    height: 155px;
+.page_img5 .image4{
+    position: absolute;
+    width: 350px;
+    height: 270px;
+    left: 90%;
+    top: 60%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
 }
 
 .documentation
@@ -424,6 +407,7 @@ left: 100px;
     margin: 1%;
     padding: 1%;
     height: 35%;
+    border-radius: 2%;
 }
 
 .doc-form-sec{
@@ -470,6 +454,7 @@ left: 100px;
     margin: 1%;
     padding: 1%;
     height: 40%;
+    border-radius: 2%;
 }
 
 .doc-form1-sec{
@@ -519,6 +504,7 @@ left: 100px;
     margin: 1%;
     padding: 1%;
     height: 40%;
+    border-radius: 5%;
 }
 
 .doc-form2-sec{
@@ -568,6 +554,7 @@ left: 100px;
     margin: 1%;
     padding: 1%;
     height: 35%;
+    border-radius: 2%;
 }
 
 .doc-form3-sec{
@@ -618,6 +605,7 @@ left: 100px;
     margin-bottom: 20px;
     padding: 1%;
     height: 25%;
+    border-radius: 2%;
 }
 
 .doc-form4-sec{
@@ -644,7 +632,7 @@ left: 100px;
 .page_img2{
     position: absolute;
     top: 20%;
-    left: 19.5%;
+    left: 5800px;
     width: 1000px;
     height: 600px;
 }
@@ -665,7 +653,7 @@ left: 100px;
 
 .page_img2 .image19{
     position: absolute;
-    width: 370px;
+    width: 250px;
     height: 320px;
     bottom: 50%;
     left: 35%;
@@ -673,310 +661,32 @@ left: 100px;
     border-image: url("../assets/wood1.png") 200;
 }
 
-.options
-{
+.groupes3{
     top: 55%;
-    width: 1000px;
-    height: 550px;
-    left: 7000px;
+    width: 380px;
+    height: 530px;
+    left: 6700px;
 }
 
-.sec_options{
-    display: flex;
-    align-items: flex-start;
-}
-
-.sec_options article{
-    margin: 1%;
-}
-
-.options .organisation h3{
-    color: #D71374;
-}
-
-.options .reservation h3{
-    color: #137BFD;
-}
-
-.options2{
-    top: 55%;
-    width: 1000px;
-    height: 550px;
-    left: 8100px;
-}
-
-.options2 section{
-    width: 100%;
-    height: 100%;
-}
-
-.options2 article{
-    width: 50%;
-    height: 100%;
-}
-
-.anniv-titre{
+.grp-laser-titre{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.anniv-titre img{
-    width: 80%;
-    margin: 1%;
-}
-
-/*Formule anniversaire 1*/
-.annif-form1 {
-    border-radius: 20px !important;
-}
-.anniv-form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    height: 25%;
-    background-color: rgba(255, 115, 0, 0.5);
-}
-
-.anniv-form1 img{
-    width: 90%;
-    height: 40%;
-    margin-bottom: -10px;
-}
-
-.anniv-form1 p{
-    margin: 1%;
-    font-size: 16px;
-}
-
-.annif1{
-    font-weight: bold;
-    color: #FF7300;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Formule anniversaire 2*/
-.anniv-form2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    height: 25%;
-    background-color: rgba(247, 221, 0, 0.5);
-}
-
-.anniv-form2 img{
+.grp-laser-titre img{
     width: 70%;
-    height: 50%;
 }
 
-.anniv-form2 p{
-    margin: 1%;
-    margin-top: -15px;
-    font-size: 14px;
-}
-
-.annif2{
-    font-weight: bold;
-    color: #F7DD00;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Formule anniversaire 3*/
-.anniv-form3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    height: 25%;
-    background-color: rgba(124, 178, 0, 0.5);
-}
-
-.anniv-form3 img{
-    width: 80%;
-    height: 55%;
-    margin-top: -15px;
-}
-
-.anniv-form3 p{
-    margin: 1%;
-    margin-top: -20px;
-    font-size: 16px;
-}
-
-.annif3{
-    font-weight: bold;
-    color: #7CB200;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Formule anniversaire 4*/
-.anniv-form4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    height: 30%;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-.anniv-form4 img{
-    width: 90%;
-    height: 50%;
-    margin-top: -10px;
-}
-
-.anniv-form4 p{
-    margin: 1%;
-    margin-top: -15px;
-    font-size: 14px;
-}
-
-.annif4{
-    font-weight: bold;
-    color: #FF0000;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.anniv-titre2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.anniv-titre2 img{
-    width: 80%;
-}
-
-/*Formule anniversaire 5*/
-.anniv-form5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    padding: 1%;
-    height: 80%;
-    background-color: rgba(124, 178, 0, 0.5);
-}
-
-.anniv-form5 img{
-    width: 60%;
-    height: 30%;
-    margin-left: -10px;
-}
-
-.anniv-form5 p{
-    font-size: 14px;
-}
-
-.annif5{
-    font-weight: bold;
-    color: #7CB200;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Formule anniversaire 6*/
-.anniv-form6{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 1%;
-    height: 90%;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-.anniv-form6 img{
-    width: 60%;
-    height: 30%;
-    margin-left: -10px;
-}
-
-.anniv-form6 p{
-    margin: 1%;
-    font-size: 14px;
-}
-
-.annif6{
-    font-weight: bold;
-    color: #FF0000;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Description laser Game*/
-.anniv-descrip-laser{
-  height: 20%;
-  margin: 1%;
-  padding: 1%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.annif7{
-    font-size: 12px;
-    margin-top: -1px;
-}
-
-.annif7 span{
-    color: #4313ED;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.options3{
-    top: 55%;
-    width: 700px;
-    height: 550px;
-    left: 9200px;
-}
-
-.options3 article{
+.grp-laser img{
     width: 100%;
-    text-align: center;
-}
-
-.anniv-form-laser{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.anniv-form-laser img{
-    width: 80%;
-}
-
-.descrip-form-laser{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-}
-
-.descrip-form-laser img{
-    width: 40%;
-}
-
-.descrip-form-laser p{
-    margin-top: -10px;
-}
-
-.options3 .descrip-form-laser span{
-    margin-top: -20px;
-    font-family: "comic";
-    font-weight: bold;
+    height: 100%;
 }
 
 .page_img3{
     position: absolute;
     top: 20%;
-    left: 10100px;
+    left: 7300px;
     width: 500px;
     height: 600px;
 }
@@ -1005,19 +715,202 @@ left: 100px;
     border-image: url("../assets/wood1.png") 200;
 }
 
+.options
+{
+    top: 55%;
+    width: 1000px;
+    height: 550px;
+    left: 8000px;
+}
+
+.sec_options{
+    display: flex;
+    align-items: flex-start;
+}
+
+.sec_options article{
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+}
+
+.organisation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 380px;
+    background-color: rgba(203, 18, 110, 0.5);
+    border-radius: 2%;
+}
+
+.organisation p{
+    font-size: 16px;
+}
+
+.reservation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 380px;
+    background-color: rgba(19, 123, 253, 0.5);
+    border-radius: 2%;
+    margin: 1%;
+}
+
+.options .organisation h3{
+    color: #D71374;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.options .reservation h3{
+    color: #137BFD;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.options .reservation p{
+    font-size: 14px;
+    margin-top: -13px;
+}
+
+.options .reservation a{
+    text-shadow: 1px 1px 2px #000;
+}
+
+.formules-anniv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 380px;
+    background-color: rgba(70, 229, 3, 0.5);
+    border-radius: 2%;
+}
+
+.form-anniv-accro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #237201;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.form-anniv-accro:hover{
+    box-shadow: 1px 1px 2px #000;
+}
+
+.form-anniv-accro p{
+    color: #fff;
+    font-family: "comic";
+    font-weight: bold;
+}
+
+.form-anniv-accro p:hover{
+    font-size: 18px;
+}
+
+.form-anniv-laser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #9D0A0F;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.form-anniv-laser:hover{
+    box-shadow: 1px 1px 2px #000;
+}
+
+.form-anniv-laser p{
+    color: #fff;
+    font-family: "comic";
+    font-weight: bold;
+}
+
+.form-anniv-laser p:hover{
+    font-size: 18px;
+}
+
+.form-anniv-pass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #F87103;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.form-anniv-pass:hover{
+    box-shadow: 1px 1px 2px #000;
+}
+
+.form-anniv-pass p{
+    color: #fff;
+    font-family: "comic";
+    font-weight: bold;
+}
+
+.form-anniv-pass p:hover{
+    font-size: 18px;
+}
+
+.page_img6{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    top: 55%;
+    left: 9100px;
+    z-index: 503;
+}
+
+.page_img6 .image1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.page_img6 .image2{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    left: 37%;
+    top: -20%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.page_img6 .image3{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    left: 70%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
 .groupes{
     top: 55%;
     width: 900px;
     height: 550px;
-    left: 10800px;
+    left: 10300px;
 }
 
 .grp-ado-titre{
     width: 100%;
-}
-
-.grp-ado-titre img{
-    width: 40%;
 }
 
 .grp-ado-titre h3{
@@ -1028,400 +921,153 @@ left: 100px;
 }
 
 .grp-sec{
+    justify-content: space-around;
     width: 100%;
     height: 80%;
 }
 
-.formule-ado div{
-    margin: 1%;
+.grp-sec h3{
+    font-size: 20px;
 }
 
 .formule-ado{
-    width: 50%;
+    justify-content: space-around;
+    width: 30%;
     height: 80%;
-}
-
-/*Groupes Ados et Enfants formule 1*/
-.grp-form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 50%;
     background-color: rgba(255, 115, 0, 0.5);
-}
-
-.grp-form1 img{
-    width: 90%;
-    height: 50%;
-    margin-left: -10px;
-    margin-top: -10px;
-}
-
-.grp-form1 p{
-    font-size: 14px;
-    margin-top: -5px;
-}
-
-.grp-form1 span{
-    color: #FF7300;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Groupes Ados et Enfants formule 2*/
-.grp-form2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding: 1%;
-    height: 50%;
-    background-color: rgba(247, 221, 0, 0.5);
+    border-radius: 2%;
 }
 
-.grp-form2 img{
-    width: 90%;
-    height: 45%;
-    margin-left: -25px;
-    margin-bottom: -20px;
-}
-
-.grp-form2 p{
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.grp-form2 span{
-    color: #F7DD00;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.formule-ado2{
-    width: 50%;
-    height: 80%;
-}
-
-.formule-ado2 div{
-    margin: 1%;
-}
-
-/*Groupes Ados et Enfants formule 3*/
-.grp-form3{
+.form-accro{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 40%;
-    background-color: rgba(124, 178, 0, 0.5);
-}
-
-.grp-form3 img{
-    width: 90%;
-    height: 50%;
-    margin-left: -45px;
-    margin-bottom: -10px;
-}
-
-.grp-form3 p{
-    font-size: 14px;
-}
-
-.grp-form3 span{
-    color: #7CB200;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Groupes Ados et Enfants formule 4*/
-.grp-form4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 40%;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-.grp-form4 img{
-    width: 90%;
-    height: 50%;
-    margin-left: -5px;
-    margin-bottom: -15px;
-}
-
-.grp-form4 p{
-    font-size: 12px;
-}
-
-.grp-form4 span{
-    color: #FF0000;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.groupes2{
-    top: 55%;
-    width: 380px;
-    height: 550px;
-    left: 11800px;
-}
-
-.grp-ado-pass-titre{
-    width: 100%;
-}
-
-.grp-ado-pass-titre img{
-    width: 70%;
-}
-
-.grp-ado-pass-titre h3{
-    text-align: center;
-    font-family: "comic";
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.formule-ado3 div{
-    margin: 1%;
-}
-
-.formule-ado3{
-    width: 100%;
-    height: 80%;
-}
-
-/*Groupes Ados et Enfants formule 5*/
-.grp-form5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 50%;
-    background-color: rgba(124, 178, 0, 0.5);
-}
-
-.grp-form5 img{
-    width: 90%;
-    height: 30%;
-}
-
-.grp-form5 p{
-    font-size: 12px;
-}
-
-.grp-form5 span{
-    color: #7CB200;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-/*Groupes Ados et Enfants formule 6*/
-.grp-form6{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 50%;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-.grp-form6 img{
-    width: 90%;
-    height: 30%;
-}
-
-.grp-form6 p{
-    font-size: 12px;
-}
-
-.grp-form6 span{
-    color: #FF0000;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.groupes2 .lgf{
-  z-index: 503;
-  position: absolute;
-  left: 95%;
-  top: 55%;
-  width: 300px;
-  height: 180px;
-  padding: 1%;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  border: 10px solid transparent;
-  border-image: url("../assets/wood1.png") 200;
-}
-
-.groupes2 .lgf span{
-    color: #4313ED;
-    font-weight: bold;
-}
-
-.groupes3{
-    top: 55%;
-    width: 380px;
-    height: 530px;
-    left: 12570px;
-}
-
-.grp-laser-titre{
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.grp-laser-titre img{
-    width: 70%;
-}
-
-.grp-laser img{
     width: 100%;
-    height: 100%;
+    height: 40px;
+    background-color: #237201;
+    border-radius: 2%;
+    cursor: pointer;
 }
 
-.groupes4{
-    top: 55%;
-    width: 600px;
-    height: 550px;
-    left: 13100px;
+.form-accro:hover{
+    box-shadow: 1px 1px 2px #000;
 }
 
-.grp-adulte-titre img{
-    width: 50%;
-}
-
-.grp-adulte-titre h3{
-    text-align: center;
+.form-accro p{
+    color: #fff;
     font-family: "comic";
     font-weight: bold;
-    font-size: 16px;
-    margin-top: -15px;
 }
 
-.formule-adultes{
+.form-accro p:hover{
+    font-size: 20px;
+}
+
+.form-laser{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-    height: 90%;
+    height: 40px;
+    background-color: #9D0A0F;
+    border-radius: 2%;
+    cursor: pointer;
 }
 
-.formule-adultes div{
-    margin: 1%;
+.form-laser:hover{
+    box-shadow: 1px 1px 2px #000;
 }
 
-/*Groupes Adulte formule 1*/
-.grp-adulte-form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 60%;
-    background-color: rgba(63, 0, 255, 0.5);
-}
-
-.grp-adulte-form1 img{
-    width: 60%;
-    height: 60%;
-    margin-left: -15px;
-    margin-bottom: -15px;
-}
-
-.grp-adulte-form1 p{
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.grp-adulte-form1 span{
-    color: #3F00FF;
+.form-laser p{
+    color: #fff;
+    font-family: "comic";
     font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
 }
 
-/*Groupes Adulte formule 2*/
-.grp-adulte-form2{
+.form-laser p:hover{
+    font-size: 20px;
+}
+
+.form-pass{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-}
-
-.grp-adulte-form2 img{
+    align-items: center;
     width: 100%;
-    margin-bottom: -10px;
+    height: 40px;
+    background-color: #F87103;
+    border-radius: 2%;
+    cursor: pointer;
 }
 
-/*Groupes Adulte formule 3*/
-.grp-adulte-form3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1%;
-    height: 40%;
-    background-color: rgba(22, 128, 32, 0.5);
+.form-pass:hover{
+    box-shadow: 1px 1px 2px #000;
 }
 
-.grp-adulte-form3 img{
-    width: 50%;
-    height: 40%;
-    margin-bottom: -20px;
-}
-
-.grp-adulte-form3 p{
-    font-size: 12px;
-}
-
-.grp-adulte-form3 span{
-    color: #168020;
+.form-pass p{
+    color: #fff;
+    font-family: "comic";
     font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
 }
 
-/*Groupes Adulte formule 4*/
-.grp-adulte-form4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.form-pass p:hover{
+    font-size: 20px;
+}
+
+.formule-adulte{
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    background-color: rgba(63, 0, 254, 0.5);
     padding: 1%;
-    height: 40%;
-    background-color: rgba(82, 255, 25, 0.5);
+    border-radius: 2%;
 }
 
-.grp-adulte-form4 img{
-    width: 40%;
-    height: 50%;
-    margin-left: -15px;
-    margin-bottom: -20px;
+.formule-edv{
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    background-color: rgba(60, 206, 7, 0.5);
+    padding: 1%;
+    border-radius: 2%;
 }
 
-.grp-adulte-form4 p{
-    font-size: 12px;
+.page_img4{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 11300px;
 }
 
-.grp-adulte-form4 span{
-    color: #52FF19;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
+.page_img4 .image1{
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    top: 10%;
+    left: 10%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
 }
 
-.download{
+.page_img4 .image2{
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    left: 100%;
+    top: 20%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.download
+{
     top: 44%;
     width: 400px;
     height: 400px;
-    left:  25000px;
+    left: 12200px;
 }
 
 form{
@@ -1439,13 +1085,82 @@ label{
     font-family: "comic";
 }
 
+.page_img7{
+    z-index: 503;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 12800px;
+}
+
+.page_img7 .image1{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    bottom: 0;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.page_img7 .image2{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 50%;
+    top: 15%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.page_img7 .image3{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 100%;
+    top: 50%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.parcours{
+    top: 55%;
+    left: 13900px;
+}
+
+.page_img8{
+    z-index: 503;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 14900px;
+}
+
+.page_img8 .image1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 15%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
+.page_img8 .image2{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 100%;
+    top: 50%;
+    border: 10px solid transparent;
+    border-image: url("../assets/wood1.png") 200;
+}
+
 .masquotte {
     position: fixed;
     top: 549px;
     left: 25px;
     height: 200px !important;
     z-index: 501;
-    
+
     -webkit-animation:spin 2s linear infinite;
     -moz-animation:spin 2s linear infinite;
     -o-transform:spin 2s linear infinite;
@@ -1477,7 +1192,7 @@ label{
     position: fixed !important;
     top: 550px;
     height: 5px;
-    width: 30000px;
+    width: 17000px;
     z-index: 502;
     background-image: url('../assets/cable.jpg');
     background-size: cover;
@@ -1487,6 +1202,35 @@ label{
     -o-transform:rotate(2deg);
     -ms-transform:rotate(2deg);*/
 }
+
+.documentation2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 15900px;
+    height: 540px;
+}
+
+.documentation2 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    margin: 1%;
+}
+
+.documentation2 h3{
+    margin-bottom: -10px;
+}
+
+.documentation2 .image11{
+    width: 70%;
+}
+
 footer {
     position: fixed;
     display: flex;
@@ -1496,16 +1240,19 @@ footer {
     width: 100%;
     z-index: 600;
 }
+
 .foo {
     display: flex;
     justify-content: space-around;
     width: 15%;
 }
+
 .foo img {
     height: 32px;
     align-items: center;
     margin: 4px;
 }
+
 .foo img:hover {
     border-radius: 30px;
     box-shadow: 3px 3px 1px rgba(10, 10, 10, 0.8);
